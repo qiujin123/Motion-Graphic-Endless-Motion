@@ -409,23 +409,79 @@ textarea {
     Footer
 ============= */
 #shapes {
-  display: grid;
-  grid-template-columns: auto 60% auto;
-  grid-template-areas: ". shapes .";
-  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 100px;
 }
-#shapes > div {
-  grid-area: shapes;
-}
-#shapes > div #red-circle {
-  height: 200px;
-  width: 200px;
+#shapes #circle {
+  height: 100px;
+  width: 100px;
   background-color: #e64307;
   border-radius: 100%;
-  margin-left: 300px;
+  position: relative;
+  bottom: 0px;
 }
-#shapes > div #blue-square {
-  height: 200px;
+#shapes .eyes-l, #shapes .eyes-r {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+#shapes .eyes-l {
+  bottom: -20px;
+  left: 20px;
+}
+#shapes .eyes-r {
+  bottom: 0px;
+  left: 60px;
+}
+#shapes .mouth {
+  background-color: #fff8ff;
+  height: 45px;
+  width: 80px;
+  border-radius: 0 0 90px 90px;
+  position: relative;
+  bottom: -5px;
+  left: 10px;
+}
+
+#grass {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #7ec850;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  bottom: -320px;
+}
+
+.dirt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #70483c;
+  height: 590px;
+  width: 100%;
+  bottom: -319px;
+}
+.dirt button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
   width: 200px;
-  background-color: #05deff;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
