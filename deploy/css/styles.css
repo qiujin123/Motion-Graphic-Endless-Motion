@@ -467,9 +467,9 @@ textarea {
   align-items: center;
   position: relative;
   background-color: #70483c;
-  height: 590px;
+  height: 260px;
   width: 100%;
-  bottom: -319px;
+  bottom: -150px;
 }
 .dirt .click {
   display: inline-block;
@@ -484,4 +484,33 @@ textarea {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+}
+
+body {
+  text-align: center;
+  overflow: hidden;
+  animation-name: body;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+}
+
+h1 {
+  position: relative;
+  animation-name: change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+@keyframes change {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: burlywood;
+  }
+  100% {
+    background-color: cadetblue;
+  }
 }
