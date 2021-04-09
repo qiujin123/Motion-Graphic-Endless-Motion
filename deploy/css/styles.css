@@ -471,7 +471,7 @@ textarea {
   width: 100%;
   bottom: -319px;
 }
-.dirt button {
+.dirt .click {
   display: inline-block;
   border-radius: 4px;
   background-color: #f4511e;

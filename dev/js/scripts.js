@@ -1,4 +1,14 @@
 import { gsap } from "gsap";
 
 
-gsap.from("#ci1rcle", { duration: 4, scale: 2, alpha: 0, delay: 2, repeat: -1, yoyo: true });
+let shapeTl = gsap.timeline({paused:true})
+
+shapeTl.from("#circle", {duration: 1, x:10})
+
+
+
+
+
+$(".click").on("click",function(){
+    shapeTl.play();
+})
