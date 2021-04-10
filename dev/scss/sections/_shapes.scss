@@ -48,4 +48,24 @@
 
 		}
 
+
+		#square-up{
+			height: 30px;
+			width: 30px;
+			background-color: #000080;
+			position: relative;
+			bottom: -20px;
+			left: 400px;
+
+			p{
+				text-align: center;
+				color: white;
+				font-size: 7px;
+				bottom: -6px;
+				position: relative;
+				font-family:Arial, Helvetica, sans-serif
+
+			}
+		}
+
 }

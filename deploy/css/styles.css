@@ -449,6 +449,22 @@ textarea {
   bottom: -5px;
   left: 10px;
 }
+#shapes #square-up {
+  height: 30px;
+  width: 30px;
+  background-color: #000080;
+  position: relative;
+  bottom: -20px;
+  left: 400px;
+}
+#shapes #square-up p {
+  text-align: center;
+  color: white;
+  font-size: 7px;
+  bottom: -6px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 #grass {
   display: flex;
@@ -484,33 +500,4 @@ textarea {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-}
-
-body {
-  text-align: center;
-  overflow: hidden;
-  animation-name: body;
-  animation-duration: 16s;
-  animation-iteration-count: infinite;
-  font-size: 30px;
-}
-
-h1 {
-  position: relative;
-  animation-name: change;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-}
-
-@keyframes change {
-  0% {
-    background-color: blue;
-  }
-  50% {
-    background-color: burlywood;
-  }
-  100% {
-    background-color: cadetblue;
-  }
 }
