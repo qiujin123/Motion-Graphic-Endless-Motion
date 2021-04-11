@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
-// import $ from jquery;
+import $ from "jquery";
 
-// let shapeTl = gsap.timeline({paused:true})
-let shapeTl = gsap.timeline();
+let shapeTl = gsap.timeline({paused:true});
+
 
 
 shapeTl.from("#circle", {duration: 3, y:-800, scaleY:.35, ease: "bounce.out"}, "s1")
@@ -45,9 +45,9 @@ shapeTl.from("#circle", {duration: 3, y:-800, scaleY:.35, ease: "bounce.out"}, "
         
 
 
-// $(".click").on("click",function(){
-//     shapeTl.play();
-// })
+$(".click").on("click",function(){
+    shapeTl.play();
+})
 
 
 
