@@ -22,7 +22,7 @@ shapeTl.from("#circle", {duration: 2, y:-350, scaleY:.40, ease: "bounce.out"}, "
         .to("#circle", {duration: .2, y:-30  },"s7")
         .to("#circle", {duration: .5, y:0, scaleY:1 },"s8")
 
-        .to(".mouth", {duration: .3, borderRadius: "20%", height: "45px", width:"80px", delay:1},"s9")
+        .to(".mouth", {duration: .1, borderRadius: "20%", height: "45px", width:"80px", delay:1},"s9")
         .to("#circle", {duration: 1, y:10, scaleY:0.7, scaleX:1.1, delay:1},"s10")
         .to("#circle", {duration: .2, y:-50, scaleX:.9},"s11")
         .to("#circle", {duration: .5, y:0, scaleY:1, scaleX:1 },"s12")
