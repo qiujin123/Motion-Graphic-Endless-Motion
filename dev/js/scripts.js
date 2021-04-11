@@ -38,7 +38,7 @@ shapeTl.from("#circle", {duration: 2, y:-350, scaleY:.40, ease: "bounce.out"}, "
         .to("#circle", {duration: .8, borderRadius:"100%", backgroundColor:"#5d6269"  },"s17")
         .to(".eyes-l", {duration: .8, backgroundColor:"#000"},"s17")
         .to(".eyes-r", {duration: .8, backgroundColor:"#000"},"s17")
-        .to(".mouth", {duration: .8, borderRadius: "0 0 90px 90px", height: "45px", width:"80px"},"s17")
+        .to(".mouth", {duration: .3, borderRadius: "0 0 90px 90px", height: "45px", width:"80px"},"s17")
 
         .to("#circle", {duration: .1, y:0, x:800, scaleX:1, scaleY:1, delay: .5},"s18")
         .to("#grass", {duration: .1, x:"+=30", yoyo: true, repeat:9 }, "s19")
