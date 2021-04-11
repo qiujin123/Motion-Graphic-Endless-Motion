@@ -482,6 +482,16 @@ textarea {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
 }
+#shapes #shadow {
+  height: 10px;
+  width: 70px;
+  background-color: #5d6269;
+  opacity: 0%;
+  border-radius: 100%;
+  position: relative;
+  bottom: -50px;
+  left: 230px;
+}
 
 #grass {
   display: flex;

@@ -3,7 +3,15 @@ import $ from "jquery";
 
 let shapeTl = gsap.timeline({paused:true});
 
+$(".click").on("click",function(){
+    shapeTl.play();
+})
 
+
+
+/* =============
+    Shape
+============= */
 
 shapeTl.from("#circle", {duration: 2, y:-350, scaleY:.40, ease: "bounce.out"}, "s1")
         .to("#circle", {duration: 2, x:"+=250" },"s1")
@@ -46,11 +54,35 @@ shapeTl.from("#circle", {duration: 2, y:-350, scaleY:.40, ease: "bounce.out"}, "
 
         .to(".click", {duration: .1, y: 100, delay: 1 }, "s21")
         
+/* =============
+    Shadow
+============= */
+
+        .to("#shadow", {duration: 1.5, alpha:0.3 },"s1")    
+        .to("#shadow", {duration: 1, x:105, delay: 0.7},"s1")
+        .to("#shadow", {duration: 0.7, scaleX:1.4, yoyo:true, repeat:2},"s1")
+
+        .to("#shadow", {duration: 1, x:150, delay:1},"s2")
+        .to("#shadow", {duration: 3, x:-145, delay:1},"s3")
+        .to("#shadow", {duration: 1, x:315},"s4")
+        .to("#shadow", {duration: 1, borderRadius:"0%", scaleX: 1.5},"s5")
+        .to("#shadow", {duration: 1, scaleX: 1.7, scaleY: 1.7, delay: 1},"s6")
+        .to("#shadow", {duration: .2, scaleX: 1.5, scaleY: 1.5},"s7")
+
+        .to("#shadow", {duration: 1, scaleX: 1.9, scaleY: 1.9, delay: 1},"s10")
+        .to("#shadow", {duration: .2, scaleX: 1.5, scaleY: 1.5},"s11")
+
+        .to("#shadow", {duration: 3, scaleX: 2.1, scaleY: 2.1},"s14")
+        .to("#shadow", {duration: .5, scaleX: 1.5, scaleY: 1.5, alpha: 0},"s15")
+
+        .to("#shadow", {duration: 4, x:655, alpha: 0.1, scaleX: 0.9, scaleY: 0.9},"s16")
+        .to("#shadow", {duration: .8, alpha: 0.3, scaleX: 1.2, scaleY: 1.2, borderRadius:"100%"},"s17")
+        .to("#shadow", {duration: .1, alpha: 0.3, scaleX: 1.5, scaleY: 1.5, delay: .5},"s18")
+
+   
 
 
-$(".click").on("click",function(){
-    shapeTl.play();
-})
+
 
 
 
