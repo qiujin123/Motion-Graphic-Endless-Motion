@@ -5,14 +5,17 @@ let shapeTl = gsap.timeline({paused:true});
 
 
 
-shapeTl.from("#circle", {duration: 3, y:-800, scaleY:.35, ease: "bounce.out"}, "s1")
+shapeTl.from("#circle", {duration: 2, y:-350, scaleY:.40, ease: "bounce.out"}, "s1")
+        .to("#circle", {duration: 2, x:"+=250" },"s1")
+
         .to("#square-up", {duration: 3, rotate: 360, repeat: -1, ease: "fast (0.1, 0.1, false" }, "s1")
         .to("#heavy-up", {duration: 3, rotate: 360, repeat: -1, ease: "fast (0.1, 0.1, false" }, "s1")
         .to("#end", {duration: 3, alpha:1 }, "s1")
 
-        .to("#circle", {duration: 1.5, rotate: 360, x:300, delay: 1},"s2")
-        .to("#circle", {duration: 1, rotate: -360, x:0},"s3")
-        .to("#circle", {duration: 1, rotate: 360, x:460},"s4")
+        .to("#circle", {duration: 1, rotate: 360, x:300, delay: 1},"s2")
+        .to("#circle", {duration: 3, rotate: -360, x:0, delay: 1},"s3")
+        .to("#circle", {duration: 1, rotate: 360, x:460 },"s4")
+
         .to("#square-up", {scale:.5, alpha: 0},"s5")
         .to("#circle", {duration: 1, borderRadius:"0%", backgroundColor:"#4682B4" },"s5")
         .to("#circle", {duration: 1, y:10, scaleY:.9, delay:1 },"s6")
@@ -30,7 +33,7 @@ shapeTl.from("#circle", {duration: 3, y:-800, scaleY:.35, ease: "bounce.out"}, "
         .to(".eyes-r", {duration: 3, backgroundColor:"#FF0000"},"s14")
         .to("#circle", {duration: .5, y:-800, scaleX:.2, scaleY:2},"s15")
 
-        .to("#circle", {duration: 6,rotate: -720, y:-150, x:800, scaleX:1, scaleY:1},"s16")
+        .to("#circle", {duration: 4,rotate: -720, y:-150, x:800, scaleX:1, scaleY:1},"s16")
         .to("#heavy-up", {scale:.5, alpha: 0},"s17")
         .to("#circle", {duration: .8, borderRadius:"100%", backgroundColor:"#5d6269"  },"s17")
         .to(".eyes-l", {duration: .8, backgroundColor:"#000"},"s17")
